@@ -1,0 +1,9 @@
+{
+  "key.category.tssc.toggle_keybinds": "Toggle Keybinds",
+  "key.tssc.toggle_sneak": "Switch Sneak Mode",
+  "key.tssc.toggle_sprint": "Switch Sprint Mode",
+  "msg.tssc.crouch_on_hold": "Sneak set to hold.",
+  "msg.tssc.crouch_on_toggle": "Sneak set to toggle.",
+  "msg.tssc.sprint_on_hold": "Sprint set to hold.",
+  "msg.tssc.sprint_on_toggle": "Sprint set to toggle."
+}

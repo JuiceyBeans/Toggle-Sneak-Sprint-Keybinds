@@ -1,4 +1,4 @@
-package com.juiceybeans.tsac;
+package com.juiceybeans.tssc;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ToggleSneakCrouch implements ModInitializer {
-	public static final String MOD_ID = "tsac";
+	public static final String MOD_ID = "tssc";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override

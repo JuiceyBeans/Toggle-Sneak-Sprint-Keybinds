@@ -1,6 +1,6 @@
-package com.juiceybeans.tsac.client;
+package com.juiceybeans.tssc.client;
 
-import com.juiceybeans.tsac.ToggleSneakCrouch;
+import com.juiceybeans.tssc.ToggleSneakCrouch;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
@@ -17,14 +17,14 @@ public class ToggleSneakCrouchClient implements ClientModInitializer {
 
     KeyMapping toggleSneakKey = KeyMappingHelper.registerKeyMapping(
             new KeyMapping(
-                    "key.tsac.toggle_sneak",
+                    "key.tssc.toggle_sneak",
                     InputConstants.Type.KEYSYM,
                     GLFW.GLFW_KEY_J,
                     this.TOGGLE_KEYBINDS_CATEGORY
             ));
     KeyMapping toggleSprintKey = KeyMappingHelper.registerKeyMapping(
             new KeyMapping(
-                    "key.tsac.toggle_sprint",
+                    "key.tssc.toggle_sprint",
                     InputConstants.Type.KEYSYM,
                     GLFW.GLFW_KEY_K,
                     this.TOGGLE_KEYBINDS_CATEGORY
@@ -39,7 +39,7 @@ public class ToggleSneakCrouchClient implements ClientModInitializer {
                 client.options.toggleCrouch().set(!isCrouchToggled);
 
                 if (client.player != null) {
-                    var msg = isCrouchToggled ? "msg.tsac.crouch_on_hold" : "msg.tsac.crouch_on_toggle";
+                    var msg = isCrouchToggled ? "msg.tssc.crouch_on_hold" : "msg.tssc.crouch_on_toggle";
                     client.player.sendSystemMessage(Component.translatable(msg));
                 }
             }
@@ -49,7 +49,7 @@ public class ToggleSneakCrouchClient implements ClientModInitializer {
                 client.options.toggleSprint().set(!isSprintToggled);
 
                 if (client.player != null) {
-                    var msg = isSprintToggled ? "msg.tsac.sprint_on_hold" : "msg.tsac.sprint_on_toggle";
+                    var msg = isSprintToggled ? "msg.tssc.sprint_on_hold" : "msg.tssc.sprint_on_toggle";
                     client.player.sendSystemMessage(Component.translatable(msg));
                 }
             }

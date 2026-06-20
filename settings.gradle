@@ -10,4 +10,4 @@ pluginManagement {
 }
 
 // Should match your modid
-rootProject.name = 'tsac'
+rootProject.name = 'tssc'
